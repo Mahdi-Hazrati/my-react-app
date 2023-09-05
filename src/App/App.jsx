@@ -19,7 +19,8 @@ export default function App() {
                 <p>
                     How to use <code>react-gh-pages-workflows</code> in react app.
                 </p>
-                <p>WOW it work {emoji}</p>
+                <p>For Every Open Source React Project in Github {emoji}</p>
+                <p>Use <Code>npx react-gh-pages-workflows</Code></p>
             </header>
             <main className="App-main">
                 <div className="emoji">{emoji}</div>
