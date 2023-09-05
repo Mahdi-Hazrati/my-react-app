@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import emoji_array from "./emoji";
 import { FiRefreshCw } from "react-icons/fi"
+import {FaReact} from "react-icons/fa"
 import "./App.css";
 
 export default function App() {
     const [emoji, setEmoji] = useState(emoji_array[0])
+    const emoji_dansity = 100
 
     const changeEmoji = () => {
         const emoji_array_length = emoji_array.length
@@ -15,14 +17,14 @@ export default function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
+                <FaReact className="App-logo" alt="react app logo" />
                 <p>
                     How to use <code>react-gh-pages-workflows</code> in react app.
                 </p>
             </header>
             <main className="App-main">
                 <div className="emoji">{emoji}</div>
-                <div className="refresh" onClick={changeEmoji}><FiRefreshCw className="icon" /></div>
+                <div className="button"><FiRefreshCw onClick={changeEmoji} className="icon" /></div>
             </main>
         </div>
     );

@@ -1,12 +1,19 @@
 .App {
   text-align: center;
+  font-family: cursive;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  font-size: 40vmin;
 }
-
+code{
+  font-family: monospace;
+  color: #282c34;
+  text-decoration: underline;
+  cursor: unset;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -15,17 +22,13 @@
 
 .App-header {
   color: #282c34;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   background-color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +38,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* App Main */
+.App-main{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  transition: 0.2s;
+}
+.App-main > .emoji,.button {
+  width: 200px;
+  height: 100px;
+  user-select: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vh;
+}
+.App-main > .button{
+  color: #282c34;
+  opacity: 0.8;
+}
+.App-main > .button:hover{
+  opacity: 1;
+  cursor: pointer;
+
 }
