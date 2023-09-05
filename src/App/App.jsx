@@ -6,8 +6,6 @@ import "./App.css";
 
 export default function App() {
     const [emoji, setEmoji] = useState(emoji_array[0])
-    const emoji_dansity = 100
-
     const changeEmoji = () => {
         const emoji_array_length = emoji_array.length
         const random_index = Math.floor(Math.random() * emoji_array_length)
