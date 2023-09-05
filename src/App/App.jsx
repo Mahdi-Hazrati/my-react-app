@@ -19,6 +19,7 @@ export default function App() {
                 <p>
                     How to use <code>react-gh-pages-workflows</code> in react app.
                 </p>
+                <p>WOW it work {emoji}</p>
             </header>
             <main className="App-main">
                 <div className="emoji">{emoji}</div>
